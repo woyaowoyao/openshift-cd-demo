@@ -1,6 +1,6 @@
 *For other versions of OpenShift, follow the instructions in the corresponding branch e.g. ocp-3.11, ocp-3.10, etc
 
-# CI/CD Demo - OpenShift Container Platform 3.11
+# CI/CD Demo - Azure Red Hat OpenShift
 
 This repository includes the infrastructure and pipeline definition for continuous delivery using Jenkins, Nexus, SonarQube and Eclipse Che on OpenShift. 
 
@@ -29,7 +29,7 @@ On every pipeline execution, the code goes through the following steps:
 
 The following diagram shows the steps included in the deployment pipeline:
 
-![](images/pipeline.svg)
+![](images/aro-pipeline.png)
 
 The application used in this pipeline is a JAX-RS application which is available on GitHub and is imported into Gogs during the setup process:
 [https://github.com/OpenShiftDemos/openshift-tasks](https://github.com/OpenShiftDemos/openshift-tasks/tree/eap-7)
