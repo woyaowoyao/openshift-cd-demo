@@ -54,7 +54,7 @@ objects:
   groupNames: null
   kind: RoleBinding
   metadata:
-    name: default_admin
+    name: default_admin2
   roleRef:
     name: admin
   subjects:
@@ -69,7 +69,7 @@ objects:
     labels:
       app: cicd-pipeline
       name: cicd-pipeline
-    name: tasks-pipeline
+    name: brewary1-pipeline
   spec:
     triggers:
       - type: GitHub
@@ -156,7 +156,7 @@ objects:
     labels:
       app: cicd-pipeline
       role: jenkins-slave
-    name: jenkins-slaves
+    name: jenkins-slaves2
   data:
     maven-template: |-
       <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
@@ -232,7 +232,7 @@ objects:
 - apiVersion: batch/v1
   kind: Job
   metadata:
-    name: cicd-demo-installer
+    name: cicd-demo-installer2
   spec:
     activeDeadlineSeconds: 400
     completions: 1
