@@ -69,7 +69,7 @@ objects:
     labels:
       app: cicd-pipeline
       name: cicd-pipeline
-    name: brewary1-pipeline
+    name: brewary3-pipeline
   spec:
     triggers:
       - type: GitHub
