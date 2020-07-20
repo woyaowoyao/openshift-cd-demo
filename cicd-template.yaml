@@ -288,6 +288,10 @@ objects:
             # setup dev env
             oc import-image wildfly --from=openshift/wildfly-120-centos7 --confirm -n ${DEV_PROJECT} 
             
+            oc import-image redhat-openjdk18-openshift --from=openshift/redhat-openjdk18-openshift --confirm
+
+            redhat-openjdk18-openshift:1.2
+            
             if [ "${ENABLE_QUAY}" == "true" ] ; then
               # cicd
               oc create secret generic quay-cicd-secret --from-literal="username=${QUAY_USERNAME}" --from-literal="password=${QUAY_PASSWORD}" -n ${CICD_NAMESPACE}
